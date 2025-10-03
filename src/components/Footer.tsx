@@ -7,20 +7,25 @@ export const Footer = () => {
         <div className="flex flex-col items-center gap-6">
           <div className="flex gap-6">
             <a 
-              href="#" 
+              href="https://github.com/MohamedAbdelkawy77" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="GitHub Profile"
             >
               <Github className="h-6 w-6 hover:scale-110 transition-transform" />
             </a>
             <a 
               href="#" 
               className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="LinkedIn Profile"
             >
               <Linkedin className="h-6 w-6 hover:scale-110 transition-transform" />
             </a>
             <a 
-              href="#" 
+              href="#contact" 
               className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Contact via Email"
             >
               <Mail className="h-6 w-6 hover:scale-110 transition-transform" />
             </a>

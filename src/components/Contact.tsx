@@ -25,7 +25,7 @@ export const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-6 bg-muted/30">
+    <section id="contact" className="py-20 px-6 bg-muted/30 scroll-mt-20">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">

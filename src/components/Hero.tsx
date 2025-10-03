@@ -16,35 +16,54 @@ export const Hero = () => {
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              Hi, I'm a
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              Hi, I'm Mohamed 👋
               <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-glow">
-                Flutter Expert
+                Flutter Developer
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
-              Crafting beautiful, performant mobile applications with Flutter. 
-              Passionate about creating seamless user experiences across iOS and Android platforms.
+            <p className="text-base md:text-lg text-muted-foreground max-w-xl">
+              I love building beautiful mobile apps with Flutter! 
+              Let's create something amazing together for iOS and Android.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button size="lg" className="group relative overflow-hidden">
+              <Button 
+                size="lg" 
+                className="group relative overflow-hidden"
+                onClick={() => document.getElementById('apps')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 <span className="relative z-10">View My Work</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </Button>
               
-              <Button size="lg" variant="outline" className="group">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="group"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 <Mail className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
                 Contact Me
               </Button>
             </div>
             
             <div className="flex gap-4 pt-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a 
+                href="https://github.com/MohamedAbdelkawy77" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="GitHub Profile"
+              >
                 <Github className="h-6 w-6 hover:scale-110 transition-transform" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a 
+                href="#" 
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="LinkedIn Profile"
+              >
                 <Linkedin className="h-6 w-6 hover:scale-110 transition-transform" />
               </a>
             </div>
@@ -55,8 +74,9 @@ export const Hero = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-20 animate-glow" />
               <img
                 src={profileImage}
-                alt="Profile"
-                className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto hover:scale-105 transition-transform duration-500"
+                alt="Mohamed Abdelkawy - Flutter Developer"
+                loading="lazy"
+                className="relative rounded-2xl shadow-2xl w-full max-w-xs mx-auto hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
