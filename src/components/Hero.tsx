@@ -1,0 +1,67 @@
+import { Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "./ui/button";
+import profileImage from "@/assets/profile.jpg";
+
+export const Hero = () => {
+  return (
+    <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 animate-pulse" style={{ animationDuration: "8s" }} />
+      
+      <div className="container mx-auto max-w-6xl relative z-10">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 animate-fade-in-up">
+            <div className="inline-block">
+              <span className="text-sm font-medium text-primary bg-primary/10 px-4 py-2 rounded-full">
+                Flutter Developer
+              </span>
+            </div>
+            
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              Hi, I'm a
+              <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-glow">
+                Flutter Expert
+              </span>
+            </h1>
+            
+            <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
+              Crafting beautiful, performant mobile applications with Flutter. 
+              Passionate about creating seamless user experiences across iOS and Android platforms.
+            </p>
+            
+            <div className="flex flex-wrap gap-4 pt-4">
+              <Button size="lg" className="group relative overflow-hidden">
+                <span className="relative z-10">View My Work</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </Button>
+              
+              <Button size="lg" variant="outline" className="group">
+                <Mail className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
+                Contact Me
+              </Button>
+            </div>
+            
+            <div className="flex gap-4 pt-4">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Github className="h-6 w-6 hover:scale-110 transition-transform" />
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Linkedin className="h-6 w-6 hover:scale-110 transition-transform" />
+              </a>
+            </div>
+          </div>
+          
+          <div className="relative animate-scale-in" style={{ animationDelay: "0.2s", opacity: 0, animationFillMode: "forwards" }}>
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-20 animate-glow" />
+              <img
+                src={profileImage}
+                alt="Profile"
+                className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
