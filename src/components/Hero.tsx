@@ -7,9 +7,9 @@ export const Hero = () => {
     <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 animate-pulse" style={{ animationDuration: "8s" }} />
       
-      <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 animate-fade-in-up">
+      <div className="container mx-auto max-w-4xl relative z-10">
+        <div className="flex flex-col items-center text-center gap-12">
+          <div className="space-y-6 animate-fade-in-up w-full">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Hi, I'm Mohamed
               <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-glow">
@@ -17,12 +17,12 @@ export const Hero = () => {
               </span>
             </h1>
             
-            <p className="text-base md:text-lg text-muted-foreground max-w-xl">
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
               I love building beautiful mobile apps with Flutter! 
               Let's create something amazing together for iOS and Android.
             </p>
             
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-4 justify-center">
               <Button 
                 size="lg" 
                 className="group relative overflow-hidden"
@@ -43,7 +43,7 @@ export const Hero = () => {
               </Button>
             </div>
             
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-4 pt-4 justify-center">
               <a 
                 href="https://github.com/MohamedAbdelkawy77" 
                 target="_blank" 
@@ -63,7 +63,7 @@ export const Hero = () => {
             </div>
           </div>
           
-          <div className="relative animate-scale-in" style={{ animationDelay: "0.2s", opacity: 0, animationFillMode: "forwards" }}>
+          <div className="relative animate-scale-in w-full" style={{ animationDelay: "0.2s", opacity: 0, animationFillMode: "forwards" }}>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-20 animate-glow" />
               <img
