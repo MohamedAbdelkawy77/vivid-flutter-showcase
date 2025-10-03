@@ -10,14 +10,8 @@ export const Hero = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in-up">
-            <div className="inline-block">
-              <span className="text-sm font-medium text-primary bg-primary/10 px-4 py-2 rounded-full">
-                Flutter Developer
-              </span>
-            </div>
-            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Hi, I'm Mohamed 👋
+              Hi, I'm Mohamed
               <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-glow">
                 Flutter Developer
               </span>
