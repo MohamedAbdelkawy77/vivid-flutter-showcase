@@ -7,8 +7,28 @@ export const Hero = () => {
     <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 animate-pulse" style={{ animationDuration: "8s" }} />
       
+      {/* Background Photo */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
+        <img
+          src={profileImage}
+          alt=""
+          className="w-[600px] h-[600px] object-cover rounded-full blur-sm"
+        />
+      </div>
+      
       <div className="container mx-auto max-w-4xl relative z-10">
-        <div className="flex flex-col items-center text-center gap-12">
+        <div className="flex flex-col items-center text-center gap-8">
+          {/* Profile Image */}
+          <div className="relative animate-scale-in" style={{ animationDelay: "0.1s", opacity: 0, animationFillMode: "forwards" }}>
+            <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-30 animate-glow" />
+            <img
+              src={profileImage}
+              alt="Mohamed Abdelkawy - Flutter Developer"
+              loading="lazy"
+              className="relative rounded-full w-32 h-32 md:w-40 md:h-40 object-cover shadow-2xl ring-4 ring-primary/20 hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          
           <div className="space-y-6 animate-fade-in-up w-full">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Hi, I'm Mohamed
@@ -54,24 +74,14 @@ export const Hero = () => {
                 <Github className="h-6 w-6 hover:scale-110 transition-transform" />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/mohamed-abdelkawy-8b42862b6" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="LinkedIn Profile"
               >
                 <Linkedin className="h-6 w-6 hover:scale-110 transition-transform" />
               </a>
-            </div>
-          </div>
-          
-          <div className="relative animate-scale-in w-full" style={{ animationDelay: "0.2s", opacity: 0, animationFillMode: "forwards" }}>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-20 animate-glow" />
-              <img
-                src={profileImage}
-                alt="Mohamed Abdelkawy - Flutter Developer"
-                loading="lazy"
-                className="relative rounded-2xl shadow-2xl w-full max-w-xs mx-auto hover:scale-105 transition-transform duration-500"
-              />
             </div>
           </div>
         </div>
