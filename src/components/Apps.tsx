@@ -136,6 +136,25 @@ export const Apps = () => {
             </Card>
           ))}
         </div>
+
+        {/* View All Projects Button */}
+        <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="gap-2 group"
+            asChild
+          >
+            <a 
+              href="https://github.com/MohamedAbdelkawy77?tab=repositories" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Github className="h-5 w-5 group-hover:rotate-12 transition-transform" />
+              View All Projects on GitHub
+            </a>
+          </Button>
+        </div>
       </div>
     </section>
   );
